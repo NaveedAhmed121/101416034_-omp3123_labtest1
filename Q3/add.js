@@ -2,7 +2,7 @@
 const fs = require('fs');
 const path = require('path');
 
-// Define the Logs directory path
+
 const logDir = path.join(__dirname, 'Logs');
 
 // Function to create the Logs directory and log files
@@ -19,7 +19,7 @@ function createLogs() {
     // Change the current process to the Logs directory
     process.chdir(logDir);
 
-    // Create 10 log files and write text into them
+    // Create 10 log files and write some text into them
     for (let i = 1; i <= 10; i++) {
         const fileName = `log${i}.txt`; // Create log file names
         fs.writeFileSync(fileName, `This is log file ${i}`); // Write text to the file
