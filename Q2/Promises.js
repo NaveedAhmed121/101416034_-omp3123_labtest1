@@ -39,7 +39,7 @@ const rejectedPromise = () => {
 
 // Call both promises separately
 resolvedPromise()
-    .then(result => console.log(result))
+    .then(result => console.log(result)) // Output: { message: 'delayed success from promise!' }
     .catch(error => console.error(error));
 
 rejectedPromise()
